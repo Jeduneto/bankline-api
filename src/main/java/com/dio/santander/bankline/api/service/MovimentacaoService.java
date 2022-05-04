@@ -34,6 +34,7 @@ public class MovimentacaoService {
 			valor = valor * -1;
 		
 		movimentacao.setDataHora(LocalDateTime.now());
+		movimentacao.setDescricao(novaMovimentacao.getDescricao());
 		movimentacao.setIdConta(novaMovimentacao.getIdConta());
 		movimentacao.setTipo(novaMovimentacao.getTipo());
 		movimentacao.setValor(valor);
